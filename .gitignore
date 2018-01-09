@@ -1,5 +1,7 @@
 babel_cache/
 
+run.sh
+
 # Logs
 logs
 *.log

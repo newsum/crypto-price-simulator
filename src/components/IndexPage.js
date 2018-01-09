@@ -174,9 +174,9 @@ export default class IndexPage extends React.Component {
                 className="form-control"
                 required>
                 <option value="" disabled selected>Choose an Exchange...</option>
-                {this.state.exchanges.map(item => {
-                  return <option value={item}>{item}</option>;
-                })}
+                <option value="binance">Binance</option>
+                <option value="gdax">GDAX</option>
+                <option value="poloniex">Poloniex</option>
             </select>
             <select name="market" className="form-control" onChange={this.handleMarketChange} required>
                 <option value="" disabled selected>{ (this.state.exchange === {}) ? 'Markets' : '...' }</option>
