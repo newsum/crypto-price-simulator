@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/babel-node --presets react,es2015 src/server.js",
+    "webpack": "node_modules/.bin/webpack",
+    "start": "node_modules/.bin/webpack && node_modules/.bin/babel-node --presets react,es2015 src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -40,6 +41,6 @@
     "precss": "^2.0.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.10.0"
   }
 }

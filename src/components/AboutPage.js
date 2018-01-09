@@ -6,23 +6,7 @@ export default class NotFoundPage extends React.Component {
     return (
       <div className="container" style={{paddingTop: '30px'}}>
         <div>
-          <h1>Running simulations can prepare us for the worst.</h1>
           <div>
-            The process for running this simulation is: 
-            <ul>
-              <li>Specify a model (for here, we will use geometric Brownian motion)</li>
-              <li>Get historical daily bitcoin prices</li>
-              <li>Calculate daily returns</li>
-              <li>Name the daily return range</li>
-              <li>Summary statistics</li>
-              <li>Simulate a year</li>
-              <li>Simulate a year many times</li>
-              <li>Multi-year summary statistics</li>
-              <li>Quick analysis of results</li>
-            </ul>
-          </div>
-        </div>
-        <div>
           <h3>What is geometric brownian motion?</h3>
           <p>
             The geometric Brownian motion (GBM) is a <strong>statistical method that is used heavily in the forecasting of stock prices.</strong> The reason the process is so attractive for this is because of the following:
@@ -41,6 +25,21 @@ export default class NotFoundPage extends React.Component {
           </div>
         </div>
       </div>
+      <div style={{paddingTop: '30px'}}>
+        The process for running this simulation is: 
+        <ul>
+          <li>Specify a model (for here, we will use geometric Brownian motion)</li>
+          <li>Get historical daily bitcoin prices</li>
+          <li>Calculate daily returns</li>
+          <li>Name the daily return range</li>
+          <li>Summary statistics</li>
+          <li>Simulate a year</li>
+          <li>Simulate a year many times</li>
+          <li>Multi-year summary statistics</li>
+          <li>Quick analysis of results</li>
+        </ul>
+      </div>
+    </div>
     );
   }
 }
