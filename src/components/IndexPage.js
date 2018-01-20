@@ -182,6 +182,7 @@ export default class IndexPage extends React.Component {
                 <option value="bittrex">Bittrex</option>
                 <option value="hitbtc2">HitBTC</option>
                 <option value="bitfinex">Bitfinex</option> 
+                <option value="bibox">Bibox</option> 
             </select>
             <select name="market" className="form-control" onChange={this.handleMarketChange} required>
                 <option value="" disabled selected>{ (this.state.exchange === {}) ? 'Markets' : '...' }</option>
